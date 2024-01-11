@@ -3,66 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网站主页</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0; /* 设置背景颜色，可根据需要修改 */
-        }
-
-        .row {
-            margin: 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-        }
-
-        .column {
-            position: relative;
-            flex: 1;
-            max-width: 45%; /* 图片最大宽度为容器宽度的45%，可根据需要修改 */
-            height: auto;
-        }
-
-        .gap {
-            width: 5%;
-        }
-
-        .text {
-            position: absolute;
-            bottom: 5px; /* 距离底部的距离，可根据需要修改 */
-            right: 5px; /* 距离右侧的距离，可根据需要修改 */
-            font-size: 10px; /* 文字大小，可根据需要修改 */
-            color: orange; /* 文字颜色，可根据需要修改 */
-        }
-    </style>
+    <title>带链接的图片</title>
 </head>
 <body>
 
-<div class="row">
-    <div class="column">
-        <img src="1/181318.jpg" alt="图片1">
-        <span class="text">文字1</span>
-    </div>
-    <div class="gap"></div> <!-- 5%的空白 -->
-    <div class="column">
-        <img src="1/276453.jpg" alt="图片2">
-        <span class="text">文字2</span>
-    </div>
-</div>
-
-<div class="row">
-    <div class="column">
-        <img src="1/303565.jpg" alt="图片3">
-        <span class="text">文字3</span>
-    </div>
-    <div class="gap"></div> <!-- 5%的空白 -->
-    <div class="column">
-        <img src="1/353632.jpg" alt="图片4">
-        <span class="text">文字4</span>
-    </div>
-</div>
+<!-- 使用 <a> 标签包裹 <img> 标签来创建带链接的图片，并设置宽度和高度 -->
+<a href="https://www.example.com">
+    <img src="path/to/your/image.jpg" alt="描述图片的文本" width="300" height="200">
+</a>
 
 </body>
 </html>
