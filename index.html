@@ -16,6 +16,25 @@
     </div>
     <div class="drawer-btn" onclick="toggleDrawer()">☰</div>
   </div>
+
+<style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #clock {
+            font-size: 4em;
+            color: #333;
+        }
+    </style>
+
+
+  
 </header>
 
 <div class="drawer">
@@ -29,3 +48,30 @@
 
 <script src="css/script.js"></script>
 </body>
+
+
+
+<body>
+    <div id="clock"></div>
+
+    <script>
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            var formattedTime = padZero(hours) + ':' + padZero(minutes) + ':' + padZero(seconds);
+            document.getElementById('clock').innerHTML = formattedTime;
+        }
+
+        function padZero(num) {
+            return (num < 10 ? '0' : '') + num;
+        }
+
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+
+
+  
+</html>
