@@ -1,31 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>黄鳝熟漫画</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" type="image/png" href="tubiao.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄鳝熟漫画</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/shizhong.css">
+    <link rel="icon" type="image/png" href="tubiao.png">
 </head>
 <body>
 
 <header>
-  <div class="header-content">
-    <div class="logo">
-      <a href="https://huangshan0216.xyz">黄鳝熟漫画</a>
+    <div class="header-content">
+        <div class="logo">
+            <a href="https://huangshan0216.xyz">黄鳝熟漫画</a>
+        </div>
+        <div class="drawer-btn" onclick="toggleDrawer()">☰</div>
     </div>
-    <div class="drawer-btn" onclick="toggleDrawer()">☰</div>
-  </div>
 </header>
 
 <div class="drawer">
-  <!-- 抽屉内容在这里添加 -->
-  <a href="manhua">漫画</a>
-  <a href="VPN.html">VPN</a>
-  <a href="ChatGPT.html">ChatGPT</a>
+    <!-- 抽屉内容在这里添加 -->
+    <a href="manhua">漫画</a>
+    <a href="VPN.html">VPN</a>
+    <a href="ChatGPT.html">ChatGPT</a>
 </div>
+
+<!-- 时钟内容在这里添加 -->
+<div id="clock"></div>
 
 <!-- 其他页面内容在这里添加 -->
 
 <script src="css/script.js"></script>
+
+<script>
+    function updateClock() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+        var formattedTime = padZero(hours) + ':' + padZero(minutes) + ':' + padZero(seconds);
+        document.getElementById('clock').innerHTML = formattedTime;
+    }
+
+    function padZero(num) {
+        return (num < 10 ? '0' : '') + num;
+    }
+
+    setInterval(updateClock, 1000);
+</script>
 </body>
+</html>
+
