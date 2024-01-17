@@ -1,27 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>黄鳝熟漫画</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/png" href="tubiao.png">
-
-  <style>
-      body {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          margin: 0;
-          background-color: #f0f0f0;
-      }
-
-      #clock {
-          font-size: 4em;
-          color: #333;
-      }
-  </style>
 </head>
 <body>
 
@@ -41,28 +25,7 @@
   <a href="ChatGPT.html">ChatGPT</a>
 </div>
 
-<!-- 时钟内容在这里添加 -->
-<div id="clock"></div>
-
 <!-- 其他页面内容在这里添加 -->
 
 <script src="css/script.js"></script>
-
-<script>
-    function updateClock() {
-        var now = new Date();
-        var hours = now.getHours();
-        var minutes = now.getMinutes();
-        var seconds = now.getSeconds();
-        var formattedTime = padZero(hours) + ':' + padZero(minutes) + ':' + padZero(seconds);
-        document.getElementById('clock').innerHTML = formattedTime;
-    }
-
-    function padZero(num) {
-        return (num < 10 ? '0' : '') + num;
-    }
-
-    setInterval(updateClock, 1000);
-</script>
 </body>
-</html>
