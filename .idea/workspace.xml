@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b26070b-98d7-4b4b-8ce5-276a08545b75" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/appConfig.xlt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/appIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/css/mikutap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/data/main/main.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/data/main/q" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/data/track/q" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/data/track/track.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/game/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/init.xlt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/js/mikutap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/js/w" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/shared/css/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/shared/css/common-1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/shared/css/index-1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/shared/js/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/shared/js/common-2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/shared/sp/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/shared/sp/css/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/shared/sp/css/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
