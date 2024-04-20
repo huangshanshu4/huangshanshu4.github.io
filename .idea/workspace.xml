@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b26070b-98d7-4b4b-8ce5-276a08545b75" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4b26070b-98d7-4b4b-8ce5-276a08545b75" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +44,7 @@
       <recent name="D:\Backup\Documents\GitHub\huangshanshu4.github.io\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Backup\Documents\GitHub\huangshanshu4.github.io" />
       <recent name="D:\Backup\Documents\GitHub\huangshanshu4.github.io\css" />
     </key>
   </component>
