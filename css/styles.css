@@ -4,13 +4,23 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #292929; /* 设置背景颜色为 #292929 */
+  background: linear-gradient(to right, #333333 50%, #000000 100%); /* 使用线性渐变背景，从深灰色到黑色，由左到右 */
 }
+
 
 header {
   background-color: #333;
   color: #fff;
 }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* 确保顶栏显示在其他内容的上方 */
+}
+
 
 .header-content {
   display: flex;
@@ -37,7 +47,6 @@ header {
 
 .drawer {
   display: none; /* 默认隐藏 */
-  flex-direction: column;
   background-color: #333;
   padding: 15px;
   position: absolute;
@@ -45,6 +54,7 @@ header {
   right: 0; /* 将抽屉内容移到右侧 */
   width: 200px;
   z-index: 1;
+  flex-direction: column; /* 将链接竖向排列 */
 }
 
 .drawer a {
@@ -54,21 +64,77 @@ header {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 600px) {
-  .drawer-btn {
-    display: block;
-  }
+.text-animation {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 修改为顶部对齐 */
+  height: 25vh; /* 距离顶部为页面的四分之一 */
+}
 
-  header {
-    flex-direction: column;
-    align-items: flex-start; /* 修改为左对齐 */
-  }
+.animated-text {
+  opacity: 0;
+  font-size: 120px; /* 扩大1.5倍的文字大小 */
+  font-family: "方正风雅宋", Serif; /* 使用方正风雅宋字体 */
+}
 
-  .drawer {
-    display: none; /* 默认隐藏 */
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0; /* 修改为左对齐 */
+
+.xiao-huang-shan {
+  text-align: center; /* 文字居中 */
+  font-size: 40px; /* 文字大小 */
+  font-family: "方正风雅宋", Serif; /* 使用方正风雅宋字体 */
+}
+
+
+
+.animated-text:nth-child(1) {
+  animation: fade-in 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.animated-text:nth-child(2) {
+  animation: fade-in 1s forwards;
+  animation-delay: 0.9s;
+}
+
+.animated-text:nth-child(3) {
+  animation: fade-in 1s forwards;
+  animation-delay: 1.3s;
+}
+
+.animated-text:nth-child(4) {
+  animation: fade-in 1s forwards;
+  animation-delay: 1.7s;
+}
+
+.animated-text:nth-child(5) {
+  animation: fade-in 1s forwards;
+  animation-delay: 2.1s;
+}
+
+
+.xiao-huang-shan:nth-child(6) {
+  animation: fade-in 1s forwards;
+  animation-delay: 2.5s; /* 在第二行文字显示后延迟显示 */
+}
+
+.background {
+  height: 50vh; /* 背景高度为页面的二分之一 */
+}
+
+
+.background {
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(#000000, #333333); /* 渐变色背景，黑色渐变到深灰色 */
+}
+
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
